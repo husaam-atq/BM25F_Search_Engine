@@ -1,0 +1,32 @@
+# Post-Course Independent Retrieval Research Extension — 2026
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Licensed/private coursework material and historical derived artefacts
+TREC-Disk-4/
+TREC-Disk-5/
+index_data/
+sample_index/
+topics.txt
+qrels.txt
+sample_topics.txt
+sample_qrels.txt
+evaluation_results.csv
+per_query_results.csv
+
+# Public datasets, downloaded models, and reproducible derived artefacts
+.cache/
+data/
+artifacts/
+*.run
+*.run.trec
+
+# Editor/OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

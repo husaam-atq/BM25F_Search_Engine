@@ -1,0 +1,1855 @@
+{
+  "nfcorpus": {
+    "aggregates": {
+      "bm25": {
+        "MAP": 0.14362623902832106,
+        "MRR": 0.5226072046326675,
+        "P@10": 0.21640866873065018,
+        "R-Precision": 0.16875729548352306,
+        "Recall@10": 0.14858409530984532,
+        "Recall@100": 0.23592772763937764,
+        "Recall@1000": 0.36825452128836056,
+        "Recall@50": 0.21015726463964332,
+        "nDCG@10": 0.30853803786383954,
+        "queries": 323
+      },
+      "bm25f": {
+        "MAP": 0.14430767847305878,
+        "MRR": 0.5213843343375921,
+        "P@10": 0.21640866873065018,
+        "R-Precision": 0.17247246782731207,
+        "Recall@10": 0.14790451712497182,
+        "Recall@100": 0.23604206010444817,
+        "Recall@1000": 0.3677869552241644,
+        "Recall@50": 0.20986578251644575,
+        "nDCG@10": 0.30910726087649587,
+        "queries": 323
+      },
+      "bm25f_phrase_proximity": {
+        "MAP": 0.14442493321352007,
+        "MRR": 0.521002578434259,
+        "P@10": 0.2154798761609907,
+        "R-Precision": 0.17369704810264144,
+        "Recall@10": 0.15087611021737873,
+        "Recall@100": 0.2368879215018623,
+        "Recall@1000": 0.3687009502864011,
+        "Recall@50": 0.20947962608484674,
+        "nDCG@10": 0.30881612519232976,
+        "queries": 323
+      },
+      "dense": {
+        "MAP": 0.16429089385184348,
+        "MRR": 0.5261127584179727,
+        "P@10": 0.24148606811145512,
+        "R-Precision": 0.18442728873971742,
+        "Recall@10": 0.15742569227816028,
+        "Recall@100": 0.2994851436804605,
+        "Recall@1000": 0.6170501220779335,
+        "Recall@50": 0.24586098595123063,
+        "nDCG@10": 0.32816614466498656,
+        "queries": 323
+      },
+      "dense_rerank": {
+        "MAP": 0.16428410252406916,
+        "MRR": 0.5244703510380724,
+        "P@10": 0.23374613003095976,
+        "R-Precision": 0.19218778118917937,
+        "Recall@10": 0.1520564390397838,
+        "Recall@100": 0.2994851436804605,
+        "Recall@1000": 0.6170501220779335,
+        "Recall@50": 0.24586098595123063,
+        "nDCG@10": 0.323517557379181,
+        "queries": 323
+      },
+      "hybrid_rerank": {
+        "MAP": 0.1686829674490413,
+        "MRR": 0.5298908983107826,
+        "P@10": 0.23869969040247677,
+        "R-Precision": 0.19628243556332534,
+        "Recall@10": 0.15745304371120977,
+        "Recall@100": 0.30749551789650775,
+        "Recall@1000": 0.6137347306202032,
+        "Recall@50": 0.2548597607410111,
+        "nDCG@10": 0.3293912244474123,
+        "queries": 323
+      },
+      "hybrid_rrf": {
+        "MAP": 0.17756706825609483,
+        "MRR": 0.5607535942384003,
+        "P@10": 0.24953560371517025,
+        "R-Precision": 0.20450523632363632,
+        "Recall@10": 0.16950670342789387,
+        "Recall@100": 0.30749551789650775,
+        "Recall@1000": 0.6137347306202032,
+        "Recall@50": 0.2548597607410111,
+        "nDCG@10": 0.3458221180386511,
+        "queries": 323
+      },
+      "lexical_rerank": {
+        "MAP": 0.15006335997697412,
+        "MRR": 0.5333286846265781,
+        "P@10": 0.22662538699690404,
+        "R-Precision": 0.17568682651765571,
+        "Recall@10": 0.15263296974951257,
+        "Recall@100": 0.2368879215018623,
+        "Recall@1000": 0.3687009502864011,
+        "Recall@50": 0.20947962608484674,
+        "nDCG@10": 0.3230558402602144,
+        "queries": 323
+      }
+    },
+    "efficiency": {
+      "bm25": {
+        "mean_latency_ms": 4.902424458213383,
+        "p50_latency_ms": 1.1433999970904551,
+        "p95_latency_ms": 13.891689998126816,
+        "queries": 323,
+        "rss_after_bytes": 385212416,
+        "rss_before_bytes": 383422464,
+        "rss_delta_bytes": 1789952,
+        "total_latency_s": 1.5834831000029226
+      },
+      "bm25f": {
+        "mean_latency_ms": 4.99329411755561,
+        "p50_latency_ms": 1.0852999985218048,
+        "p95_latency_ms": 14.373540002270596,
+        "queries": 323,
+        "rss_after_bytes": 386945024,
+        "rss_before_bytes": 385212416,
+        "rss_delta_bytes": 1732608,
+        "total_latency_s": 1.6128339999704622
+      },
+      "bm25f_phrase_proximity": {
+        "mean_latency_ms": 9.999905263234849,
+        "p50_latency_ms": 1.683700000285171,
+        "p95_latency_ms": 39.860490001592524,
+        "queries": 323,
+        "rss_after_bytes": 402137088,
+        "rss_before_bytes": 386994176,
+        "rss_delta_bytes": 15142912,
+        "total_latency_s": 3.2299694000248564
+      },
+      "dense": {
+        "mean_latency_ms": 9.750032507881684,
+        "p50_latency_ms": 8.814900000288617,
+        "p95_latency_ms": 10.569400003441842,
+        "queries": 323,
+        "rss_after_bytes": 835682304,
+        "rss_before_bytes": 800096256,
+        "rss_delta_bytes": 35586048,
+        "total_latency_s": 3.1492605000457843
+      },
+      "dense_index": {
+        "dense_index_size_bytes": 5162563,
+        "document_embedding_time_s": 147.77167069999996,
+        "documents_per_second": 24.585226537605905,
+        "embedding_dimension": 384,
+        "embedding_dtype": "float32",
+        "model": {
+          "device": "cpu",
+          "document_format": "passage: title: {title}\\nbody: {text}",
+          "embedding_dimension": 384,
+          "maximum_length_tokens": 512,
+          "model_id": "intfloat/e5-small-v2",
+          "normalisation": "L2",
+          "pooling": "model-defined average pooling",
+          "query_format": "query: {query}",
+          "requested_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+          "resolved_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+          "similarity": "dot product (equivalent to cosine after L2 normalisation)"
+        },
+        "model_load_time_s": 7.880727099996875,
+        "rss_after_bytes": 1037815808,
+        "rss_before_bytes": 605798400,
+        "rss_delta_bytes": 432017408
+      },
+      "dense_rerank": {
+        "candidate_source": "dense",
+        "fixed_candidate_depth": 50,
+        "mean_latency_ms": 391.47685201263835,
+        "p50_latency_ms": 392.8842000022996,
+        "p95_latency_ms": 407.7590999972017,
+        "queries": 323,
+        "rss_after_bytes": 1582927872,
+        "rss_before_bytes": 1395642368,
+        "rss_delta_bytes": 187285504,
+        "total_latency_s": 126.44702320008219
+      },
+      "environment": {
+        "cuda_available": false,
+        "logical_cpu_count": 24,
+        "physical_cpu_count": 12,
+        "platform": "Windows-11-10.0.26200-SP0",
+        "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+        "python": "3.12.13",
+        "torch": "2.13.0+cpu",
+        "total_memory_bytes": 134874902528
+      },
+      "hybrid_rerank": {
+        "candidate_source": "hybrid_rrf",
+        "fixed_candidate_depth": 50,
+        "mean_latency_ms": 393.8305526315179,
+        "p50_latency_ms": 392.53499999904307,
+        "p95_latency_ms": 414.4948000037402,
+        "queries": 323,
+        "rss_after_bytes": 1442742272,
+        "rss_before_bytes": 1582927872,
+        "rss_delta_bytes": -140185600,
+        "total_latency_s": 127.20726849998027
+      },
+      "hybrid_rrf": {
+        "component_query_latency_note": "fusion-only; end-to-end hybrid adds lexical and dense first-stage latency",
+        "estimated_end_to_end_mean_latency_ms": 21.22164458226003,
+        "mean_latency_ms": 1.4717068111434963,
+        "p50_latency_ms": 0.7048999977996573,
+        "p95_latency_ms": 1.054570000997046,
+        "queries": 323,
+        "rss_after_bytes": 874971136,
+        "rss_before_bytes": 835682304,
+        "rss_delta_bytes": 39288832,
+        "total_latency_s": 0.4753612999993493
+      },
+      "lexical_index": {
+        "build_time_s": 1.4317598000052385,
+        "documents": 3633,
+        "index_size_bytes": 18485969,
+        "rss_after_bytes": 259825664,
+        "rss_before_bytes": 49438720,
+        "rss_delta_bytes": 210386944,
+        "terms": 29047
+      },
+      "lexical_rerank": {
+        "candidate_source": "bm25f_phrase_proximity",
+        "fixed_candidate_depth": 50,
+        "mean_latency_ms": 280.69410309608736,
+        "p50_latency_ms": 389.26769999670796,
+        "p95_latency_ms": 404.53152999907616,
+        "queries": 323,
+        "rss_after_bytes": 1395642368,
+        "rss_before_bytes": 884473856,
+        "rss_delta_bytes": 511168512,
+        "total_latency_s": 90.66419530003623
+      },
+      "reranker_model": {
+        "fixed_candidate_depth": 50,
+        "model": {
+          "device": "cpu",
+          "input_format": "(query, title: {title}\\nbody: {text})",
+          "maximum_length_tokens": 512,
+          "model_id": "cross-encoder/ms-marco-MiniLM-L2-v2",
+          "requested_revision": "1b5cd67b15209f24824c50370e0397743aa9b787",
+          "resolved_revision": "1b5cd67b15209f24824c50370e0397743aa9b787"
+        },
+        "model_load_time_s": 1.0366410999995423
+      }
+    },
+    "paired_stage_comparisons": {
+      "bm25_to_bm25f": {
+        "AP": {
+          "baseline_mean": 0.14362623902832106,
+          "bootstrap_ci_95_high": 0.0020661935763561356,
+          "bootstrap_ci_95_low": -0.0006357328858874155,
+          "candidate_mean": 0.14430767847305878,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 95,
+          "mean_difference": 0.0006814394447377132,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.05451554710142054,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.3335333233338333,
+          "ties": 118,
+          "wins": 110
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30853803786383954,
+          "bootstrap_ci_95_high": 0.00371699165949067,
+          "bootstrap_ci_95_low": -0.002562400150737292,
+          "candidate_mean": 0.30910726087649587,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 48,
+          "mean_difference": 0.0005692230126563006,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.019831899103182664,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.7216139193040348,
+          "ties": 223,
+          "wins": 52
+        }
+      },
+      "bm25f_to_phrase_proximity": {
+        "AP": {
+          "baseline_mean": 0.14430767847305878,
+          "bootstrap_ci_95_high": 0.00160909410045545,
+          "bootstrap_ci_95_low": -0.001222921171023422,
+          "candidate_mean": 0.14442493321352007,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 72,
+          "mean_difference": 0.0001172547404612879,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.009035185137144137,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.8791060446977651,
+          "ties": 193,
+          "wins": 58
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30910726087649587,
+          "bootstrap_ci_95_high": 0.003042512044006627,
+          "bootstrap_ci_95_low": -0.003327763149580794,
+          "candidate_mean": 0.30881612519232976,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 27,
+          "mean_difference": -0.0002911356841660819,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.009784148633251093,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.8650067496625169,
+          "ties": 270,
+          "wins": 26
+        }
+      },
+      "dense_to_dense_rerank": {
+        "AP": {
+          "baseline_mean": 0.16429089385184348,
+          "bootstrap_ci_95_high": 0.00867832924180551,
+          "bootstrap_ci_95_low": -0.008267536711248193,
+          "candidate_mean": 0.16428410252406916,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 112,
+          "mean_difference": -6.791327774337915e-06,
+          "metric": "AP",
+          "paired_effect_size_dz": -8.822735176342558e-05,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.9982500874956253,
+          "ties": 92,
+          "wins": 119
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.32816614466498656,
+          "bootstrap_ci_95_high": 0.009624084967356774,
+          "bootstrap_ci_95_low": -0.0190410609649543,
+          "candidate_mean": 0.323517557379181,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 97,
+          "mean_difference": -0.004648587285805604,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.035550178846131035,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.5245737713114345,
+          "ties": 126,
+          "wins": 100
+        }
+      },
+      "hybrid_to_hybrid_rerank": {
+        "AP": {
+          "baseline_mean": 0.17756706825609483,
+          "bootstrap_ci_95_high": -0.002908360363453621,
+          "bootstrap_ci_95_low": -0.015221463704780138,
+          "candidate_mean": 0.1686829674490413,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 141,
+          "mean_difference": -0.008884100807053555,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.15627148542699665,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.004599770011499425,
+          "ties": 92,
+          "wins": 90
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.3458221180386511,
+          "bootstrap_ci_95_high": -0.0035999610453651904,
+          "bootstrap_ci_95_low": -0.030158586066769997,
+          "candidate_mean": 0.3293912244474123,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 110,
+          "mean_difference": -0.016430893591238744,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.1359789236038602,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.01454927253637318,
+          "ties": 128,
+          "wins": 85
+        }
+      },
+      "lexical_to_dense": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.03174601246713709,
+          "bootstrap_ci_95_low": 0.007785318157764809,
+          "candidate_mean": 0.16429089385184348,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 87,
+          "mean_difference": 0.019865960638323424,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.18224237515484035,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.00119994000299985,
+          "ties": 24,
+          "wins": 212
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.03945835961829546,
+          "bootstrap_ci_95_low": -0.0010096200636046982,
+          "candidate_mean": 0.32816614466498656,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 89,
+          "mean_difference": 0.01935001947265681,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.10572145078059389,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.05804709764511774,
+          "ties": 119,
+          "wins": 115
+        }
+      },
+      "lexical_to_hybrid": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.040590758571591855,
+          "bootstrap_ci_95_low": 0.02598643856858541,
+          "candidate_mean": 0.17756706825609483,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 38,
+          "mean_difference": 0.033142135042574766,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.48665088177127414,
+          "queries": 323,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 29,
+          "wins": 256
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.050084314812912964,
+          "bootstrap_ci_95_low": 0.024059549219037968,
+          "candidate_mean": 0.3458221180386511,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 52,
+          "mean_difference": 0.03700599284632131,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.31161814076041183,
+          "queries": 323,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 147,
+          "wins": 124
+        }
+      },
+      "lexical_to_lexical_rerank": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.01224461016594515,
+          "bootstrap_ci_95_low": -0.0006312990506152224,
+          "candidate_mean": 0.15006335997697412,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 86,
+          "mean_difference": 0.005638426763454055,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.09471384903007775,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.09174541272936353,
+          "ties": 132,
+          "wins": 105
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.02621884328454184,
+          "bootstrap_ci_95_low": 0.002168232881397601,
+          "candidate_mean": 0.3230558402602144,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 72,
+          "mean_difference": 0.014239715067884616,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.12862238150069405,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.019149042547872606,
+          "ties": 153,
+          "wins": 98
+        }
+      }
+    },
+    "query_analysis": {
+      "categories": {
+        "long_>=10_tokens": {
+          "losses": 1,
+          "mean_ap_delta": 0.0385233133644187,
+          "queries": 6,
+          "ties": 1,
+          "wins": 4
+        },
+        "medium_6-9_tokens": {
+          "losses": 9,
+          "mean_ap_delta": 0.034797845901089725,
+          "queries": 59,
+          "ties": 3,
+          "wins": 47
+        },
+        "named_entity_heavy": {
+          "losses": 28,
+          "mean_ap_delta": 0.03017830066536213,
+          "queries": 144,
+          "ties": 5,
+          "wins": 111
+        },
+        "phrase_proximity_sensitive": {
+          "losses": 19,
+          "mean_ap_delta": 0.034682809239335075,
+          "queries": 133,
+          "ties": 6,
+          "wins": 108
+        },
+        "rare_or_oov_term": {
+          "losses": 36,
+          "mean_ap_delta": 0.03026392974707964,
+          "queries": 281,
+          "ties": 29,
+          "wins": 216
+        },
+        "short_<=5_tokens": {
+          "losses": 28,
+          "mean_ap_delta": 0.03263835980775521,
+          "queries": 258,
+          "ties": 25,
+          "wins": 205
+        },
+        "strong_lexical_dense_disagreement": {
+          "losses": 22,
+          "mean_ap_delta": 0.029433923431226066,
+          "queries": 197,
+          "ties": 24,
+          "wins": 151
+        }
+      },
+      "category_protocol": {
+        "long": ">=10 lexical tokens",
+        "named_entity_heavy": ">=20% of whitespace tokens after the first are capitalised/acronyms",
+        "phrase_sensitive": "BM25F and BM25F+phrase/proximity top-10 order differs",
+        "ranking_disagreement": "top-10 set Jaccard <=0.20",
+        "rare_or_oov": "minimum query-term document-frequency ratio <=1%",
+        "short": "<=5 lexical tokens"
+      },
+      "representative_largest_absolute_deltas": [
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "medium_6-9_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Vitamin D: Shedding some light on the new recommendations",
+          "query_id": "PLAIN-307"
+        },
+        {
+          "ap_delta": 0.342148167586085,
+          "labels": [
+            "short_<=5_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.2,
+          "query": "Chernobyl",
+          "query_id": "PLAIN-882"
+        },
+        {
+          "ap_delta": 0.32196086226698467,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term"
+          ],
+          "lexical_dense_top10_jaccard": 0.25,
+          "query": "Are Multivitamins Good For You?",
+          "query_id": "PLAIN-3292"
+        },
+        {
+          "ap_delta": -0.29781961882462993,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Harvard Physicians\u2019 Study II",
+          "query_id": "PLAIN-1320"
+        },
+        {
+          "ap_delta": 0.26977320108392616,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Does Cholesterol Size Matter?",
+          "query_id": "PLAIN-2540"
+        },
+        {
+          "ap_delta": 0.26275,
+          "labels": [
+            "short_<=5_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "oral intraepithelial neoplasia",
+          "query_id": "PLAIN-1762"
+        },
+        {
+          "ap_delta": 0.25390289900625884,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.17647058823529413,
+          "query": "Alcohol Risks vs. Benefits",
+          "query_id": "PLAIN-3332"
+        },
+        {
+          "ap_delta": 0.22882481250820613,
+          "labels": [
+            "short_<=5_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "carcinogens",
+          "query_id": "PLAIN-827"
+        },
+        {
+          "ap_delta": 0.22487179487179487,
+          "labels": [
+            "medium_6-9_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.25,
+          "query": "Any update on the scary in vitro avocado data?",
+          "query_id": "PLAIN-371"
+        },
+        {
+          "ap_delta": 0.22385114748924845,
+          "labels": [
+            "short_<=5_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.1,
+          "query": "cocaine",
+          "query_id": "PLAIN-924"
+        },
+        {
+          "ap_delta": 0.2153359126170061,
+          "labels": [
+            "short_<=5_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.2,
+          "query": "spearmint",
+          "query_id": "PLAIN-2124"
+        },
+        {
+          "ap_delta": -0.20335429769392033,
+          "labels": [
+            "medium_6-9_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "Is Coconut Milk Good For You?",
+          "query_id": "PLAIN-3342"
+        },
+        {
+          "ap_delta": 0.19181662600339316,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.17647058823529413,
+          "query": "How Should I Take Probiotics?",
+          "query_id": "PLAIN-153"
+        },
+        {
+          "ap_delta": 0.1908256880733945,
+          "labels": [
+            "short_<=5_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "dietary scoring",
+          "query_id": "PLAIN-1028"
+        },
+        {
+          "ap_delta": 0.18485338877864485,
+          "labels": [
+            "medium_6-9_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "Is Distilled Fish Oil Toxin-Free?",
+          "query_id": "PLAIN-3191"
+        },
+        {
+          "ap_delta": 0.18275894076811977,
+          "labels": [
+            "short_<=5_tokens"
+          ],
+          "lexical_dense_top10_jaccard": 0.42857142857142855,
+          "query": "seafood",
+          "query_id": "PLAIN-2061"
+        },
+        {
+          "ap_delta": 0.17949254716368507,
+          "labels": [
+            "short_<=5_tokens"
+          ],
+          "lexical_dense_top10_jaccard": 0.25,
+          "query": "pesticides",
+          "query_id": "PLAIN-1837"
+        },
+        {
+          "ap_delta": 0.1668018505167027,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Are Avocados Good for You?",
+          "query_id": "PLAIN-3131"
+        },
+        {
+          "ap_delta": 0.16087207078401905,
+          "labels": [
+            "long_>=10_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Too Much Iodine Can Be as Bad as Too Little",
+          "query_id": "PLAIN-3151"
+        },
+        {
+          "ap_delta": 0.15,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "Vitamin C-Enriched Bacon",
+          "query_id": "PLAIN-3026"
+        }
+      ]
+    },
+    "significance_vs_bm25f_phrase_proximity": {
+      "dense": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.03174601246713709,
+          "bootstrap_ci_95_low": 0.007785318157764809,
+          "candidate_mean": 0.16429089385184348,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 87,
+          "mean_difference": 0.019865960638323424,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.18224237515484035,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.00119994000299985,
+          "ties": 24,
+          "wins": 212
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.03945835961829546,
+          "bootstrap_ci_95_low": -0.0010096200636046982,
+          "candidate_mean": 0.32816614466498656,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 89,
+          "mean_difference": 0.01935001947265681,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.10572145078059389,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.05804709764511774,
+          "ties": 119,
+          "wins": 115
+        }
+      },
+      "dense_rerank": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.029254277275285054,
+          "bootstrap_ci_95_low": 0.010424817242197137,
+          "candidate_mean": 0.16428410252406916,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 75,
+          "mean_difference": 0.019859169310549086,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.22793246686417876,
+          "queries": 323,
+          "randomisation_p_two_sided": 9.99950002499875e-05,
+          "ties": 28,
+          "wins": 220
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.03179679424471754,
+          "bootstrap_ci_95_low": -0.0025970344642781747,
+          "candidate_mean": 0.323517557379181,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 88,
+          "mean_difference": 0.014701432186851209,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.09387841680840825,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.09254537273136343,
+          "ties": 123,
+          "wins": 112
+        }
+      },
+      "hybrid_rerank": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.03218659749862827,
+          "bootstrap_ci_95_low": 0.016452400422364826,
+          "candidate_mean": 0.1686829674490413,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 59,
+          "mean_difference": 0.024258034235521215,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.3303929228378598,
+          "queries": 323,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 29,
+          "wins": 235
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.03541185117068699,
+          "bootstrap_ci_95_low": 0.0055350219163598936,
+          "candidate_mean": 0.3293912244474123,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 83,
+          "mean_difference": 0.02057509925508257,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.15177455736651674,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.0055997200139993,
+          "ties": 130,
+          "wins": 110
+        }
+      },
+      "hybrid_rrf": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.040590758571591855,
+          "bootstrap_ci_95_low": 0.02598643856858541,
+          "candidate_mean": 0.17756706825609483,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 38,
+          "mean_difference": 0.033142135042574766,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.48665088177127414,
+          "queries": 323,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 29,
+          "wins": 256
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.050084314812912964,
+          "bootstrap_ci_95_low": 0.024059549219037968,
+          "candidate_mean": 0.3458221180386511,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 52,
+          "mean_difference": 0.03700599284632131,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.31161814076041183,
+          "queries": 323,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 147,
+          "wins": 124
+        }
+      },
+      "lexical_rerank": {
+        "AP": {
+          "baseline_mean": 0.14442493321352007,
+          "bootstrap_ci_95_high": 0.01224461016594515,
+          "bootstrap_ci_95_low": -0.0006312990506152224,
+          "candidate_mean": 0.15006335997697412,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 86,
+          "mean_difference": 0.005638426763454055,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.09471384903007775,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.09174541272936353,
+          "ties": 132,
+          "wins": 105
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.30881612519232976,
+          "bootstrap_ci_95_high": 0.02621884328454184,
+          "bootstrap_ci_95_low": 0.002168232881397601,
+          "candidate_mean": 0.3230558402602144,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 72,
+          "mean_difference": 0.014239715067884616,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.12862238150069405,
+          "queries": 323,
+          "randomisation_p_two_sided": 0.019149042547872606,
+          "ties": 153,
+          "wins": 98
+        }
+      }
+    }
+  },
+  "scifact": {
+    "aggregates": {
+      "bm25": {
+        "MAP": 0.6255892773301545,
+        "MRR": 0.6370255378854867,
+        "P@10": 0.08666666666666667,
+        "R-Precision": 0.5348333333333333,
+        "Recall@10": 0.7842777777777777,
+        "Recall@100": 0.8825555555555555,
+        "Recall@1000": 0.965,
+        "Recall@50": 0.8703888888888889,
+        "nDCG@10": 0.6640701529357843,
+        "queries": 300
+      },
+      "bm25f": {
+        "MAP": 0.6373969137217596,
+        "MRR": 0.6495769840909484,
+        "P@10": 0.08733333333333335,
+        "R-Precision": 0.5581666666666666,
+        "Recall@10": 0.7934444444444444,
+        "Recall@100": 0.8858888888888888,
+        "Recall@1000": 0.965,
+        "Recall@50": 0.8710555555555556,
+        "nDCG@10": 0.675244300438221,
+        "queries": 300
+      },
+      "bm25f_phrase_proximity": {
+        "MAP": 0.6349014002685147,
+        "MRR": 0.6479878937122472,
+        "P@10": 0.08700000000000001,
+        "R-Precision": 0.5481666666666666,
+        "Recall@10": 0.7901111111111111,
+        "Recall@100": 0.8792222222222221,
+        "Recall@1000": 0.965,
+        "Recall@50": 0.8660555555555556,
+        "nDCG@10": 0.6728503733052884,
+        "queries": 300
+      },
+      "dense": {
+        "MAP": 0.6491673152531618,
+        "MRR": 0.6628771810683296,
+        "P@10": 0.092,
+        "R-Precision": 0.5637222222222222,
+        "Recall@10": 0.8145555555555556,
+        "Recall@100": 0.9276666666666668,
+        "Recall@1000": 0.99,
+        "Recall@50": 0.921,
+        "nDCG@10": 0.6885256777652553,
+        "queries": 300
+      },
+      "dense_rerank": {
+        "MAP": 0.5907665955172354,
+        "MRR": 0.5974997112004168,
+        "P@10": 0.08800000000000001,
+        "R-Precision": 0.5005000000000001,
+        "Recall@10": 0.7798888888888889,
+        "Recall@100": 0.9276666666666668,
+        "Recall@1000": 0.99,
+        "Recall@50": 0.921,
+        "nDCG@10": 0.6327173315301531,
+        "queries": 300
+      },
+      "hybrid_rerank": {
+        "MAP": 0.5722111078884832,
+        "MRR": 0.5786726711822788,
+        "P@10": 0.08466666666666667,
+        "R-Precision": 0.48316666666666663,
+        "Recall@10": 0.7525555555555556,
+        "Recall@100": 0.9683333333333334,
+        "Recall@1000": 0.9933333333333333,
+        "Recall@50": 0.9383333333333334,
+        "nDCG@10": 0.6101783793349375,
+        "queries": 300
+      },
+      "hybrid_rrf": {
+        "MAP": 0.6779629727268006,
+        "MRR": 0.6900023798614526,
+        "P@10": 0.09433333333333334,
+        "R-Precision": 0.5912777777777778,
+        "Recall@10": 0.8412222222222222,
+        "Recall@100": 0.9683333333333334,
+        "Recall@1000": 0.9933333333333333,
+        "Recall@50": 0.9383333333333334,
+        "nDCG@10": 0.7174099728731805,
+        "queries": 300
+      },
+      "lexical_rerank": {
+        "MAP": 0.5662233890221174,
+        "MRR": 0.5744626544862066,
+        "P@10": 0.083,
+        "R-Precision": 0.4837222222222222,
+        "Recall@10": 0.7422777777777778,
+        "Recall@100": 0.8792222222222221,
+        "Recall@1000": 0.965,
+        "Recall@50": 0.8660555555555556,
+        "nDCG@10": 0.6050441954647827,
+        "queries": 300
+      }
+    },
+    "efficiency": {
+      "bm25": {
+        "mean_latency_ms": 19.408250999913434,
+        "p50_latency_ms": 15.829949999897508,
+        "p95_latency_ms": 35.81172500016693,
+        "queries": 300,
+        "rss_after_bytes": 455655424,
+        "rss_before_bytes": 452599808,
+        "rss_delta_bytes": 3055616,
+        "total_latency_s": 5.82247529997403
+      },
+      "bm25f": {
+        "mean_latency_ms": 29.045203333419824,
+        "p50_latency_ms": 24.13399999932153,
+        "p95_latency_ms": 50.39245499974641,
+        "queries": 300,
+        "rss_after_bytes": 467746816,
+        "rss_before_bytes": 455663616,
+        "rss_delta_bytes": 12083200,
+        "total_latency_s": 8.713561000025948
+      },
+      "bm25f_phrase_proximity": {
+        "mean_latency_ms": 141.59571133355107,
+        "p50_latency_ms": 95.65959999963525,
+        "p95_latency_ms": 418.75377000069443,
+        "queries": 300,
+        "rss_after_bytes": 504123392,
+        "rss_before_bytes": 467755008,
+        "rss_delta_bytes": 36368384,
+        "total_latency_s": 42.47871340006532
+      },
+      "dense": {
+        "mean_latency_ms": 10.67135199996604,
+        "p50_latency_ms": 10.55504999749246,
+        "p95_latency_ms": 12.318379998396267,
+        "queries": 300,
+        "rss_after_bytes": 943554560,
+        "rss_before_bytes": 1261592576,
+        "rss_delta_bytes": -318038016,
+        "total_latency_s": 3.201405599989812
+      },
+      "dense_index": {
+        "dense_index_size_bytes": 7392885,
+        "document_embedding_time_s": 194.54089559999557,
+        "documents_per_second": 26.642213114187587,
+        "embedding_dimension": 384,
+        "embedding_dtype": "float32",
+        "model": {
+          "device": "cpu",
+          "document_format": "passage: title: {title}\\nbody: {text}",
+          "embedding_dimension": 384,
+          "maximum_length_tokens": 512,
+          "model_id": "intfloat/e5-small-v2",
+          "normalisation": "L2",
+          "pooling": "model-defined average pooling",
+          "query_format": "query: {query}",
+          "requested_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+          "resolved_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+          "similarity": "dot product (equivalent to cosine after L2 normalisation)"
+        },
+        "model_load_time_s": 7.365520899998955,
+        "rss_after_bytes": 1260744704,
+        "rss_before_bytes": 694800384,
+        "rss_delta_bytes": 565944320
+      },
+      "dense_rerank": {
+        "candidate_source": "dense",
+        "fixed_candidate_depth": 50,
+        "mean_latency_ms": 395.84327933363966,
+        "p50_latency_ms": 396.0757499989995,
+        "p95_latency_ms": 411.58033999672625,
+        "queries": 300,
+        "rss_after_bytes": 1526198272,
+        "rss_before_bytes": 1605021696,
+        "rss_delta_bytes": -78823424,
+        "total_latency_s": 118.7529838000919
+      },
+      "environment": {
+        "cuda_available": false,
+        "logical_cpu_count": 24,
+        "physical_cpu_count": 12,
+        "platform": "Windows-11-10.0.26200-SP0",
+        "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+        "python": "3.12.13",
+        "torch": "2.13.0+cpu",
+        "total_memory_bytes": 134874902528
+      },
+      "hybrid_rerank": {
+        "candidate_source": "hybrid_rrf",
+        "fixed_candidate_depth": 50,
+        "mean_latency_ms": 398.4295806665614,
+        "p50_latency_ms": 399.47419999953127,
+        "p95_latency_ms": 411.3318949985114,
+        "queries": 300,
+        "rss_after_bytes": 1561739264,
+        "rss_before_bytes": 1526198272,
+        "rss_delta_bytes": 35540992,
+        "total_latency_s": 119.52887419996841
+      },
+      "hybrid_rrf": {
+        "component_query_latency_note": "fusion-only; end-to-end hybrid adds lexical and dense first-stage latency",
+        "estimated_end_to_end_mean_latency_ms": 154.82674066680678,
+        "mean_latency_ms": 2.5596773332896796,
+        "p50_latency_ms": 1.3627000007545575,
+        "p95_latency_ms": 1.5333399976952933,
+        "queries": 300,
+        "rss_after_bytes": 979902464,
+        "rss_before_bytes": 943554560,
+        "rss_delta_bytes": 36347904,
+        "total_latency_s": 0.7679031999869039
+      },
+      "lexical_index": {
+        "build_time_s": 2.136033699993277,
+        "documents": 5183,
+        "index_size_bytes": 24557753,
+        "rss_after_bytes": 328941568,
+        "rss_before_bytes": 50171904,
+        "rss_delta_bytes": 278769664,
+        "terms": 37759
+      },
+      "lexical_rerank": {
+        "candidate_source": "bm25f_phrase_proximity",
+        "fixed_candidate_depth": 50,
+        "mean_latency_ms": 393.9112616666777,
+        "p50_latency_ms": 393.16779999717255,
+        "p95_latency_ms": 409.68204499622516,
+        "queries": 300,
+        "rss_after_bytes": 1605021696,
+        "rss_before_bytes": 988278784,
+        "rss_delta_bytes": 616742912,
+        "total_latency_s": 118.17337850000331
+      },
+      "reranker_model": {
+        "fixed_candidate_depth": 50,
+        "model": {
+          "device": "cpu",
+          "input_format": "(query, title: {title}\\nbody: {text})",
+          "maximum_length_tokens": 512,
+          "model_id": "cross-encoder/ms-marco-MiniLM-L2-v2",
+          "requested_revision": "1b5cd67b15209f24824c50370e0397743aa9b787",
+          "resolved_revision": "1b5cd67b15209f24824c50370e0397743aa9b787"
+        },
+        "model_load_time_s": 1.1873850999982096
+      }
+    },
+    "paired_stage_comparisons": {
+      "bm25_to_bm25f": {
+        "AP": {
+          "baseline_mean": 0.6255892773301545,
+          "bootstrap_ci_95_high": 0.022996453718373364,
+          "bootstrap_ci_95_low": 0.0015845129567862866,
+          "candidate_mean": 0.6373969137217596,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 42,
+          "mean_difference": 0.011807636391605217,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.12326166533737462,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.031098445077746114,
+          "ties": 217,
+          "wins": 41
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6640701529357843,
+          "bootstrap_ci_95_high": 0.02041020748223144,
+          "bootstrap_ci_95_low": 0.0027256356145897538,
+          "candidate_mean": 0.675244300438221,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 14,
+          "mean_difference": 0.011174147502436733,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.1411910374593259,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.013949302534873257,
+          "ties": 262,
+          "wins": 24
+        }
+      },
+      "bm25f_to_phrase_proximity": {
+        "AP": {
+          "baseline_mean": 0.6373969137217596,
+          "bootstrap_ci_95_high": 0.006867301751519731,
+          "bootstrap_ci_95_low": -0.012389585829936064,
+          "candidate_mean": 0.6349014002685147,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 47,
+          "mean_difference": -0.002495513453244915,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.02926471120923338,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.6253187340632969,
+          "ties": 219,
+          "wins": 34
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.675244300438221,
+          "bootstrap_ci_95_high": 0.005963080774398927,
+          "bootstrap_ci_95_low": -0.011049924414051233,
+          "candidate_mean": 0.6728503733052884,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 19,
+          "mean_difference": -0.0023939271329327235,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.031372228731635476,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.592520373981301,
+          "ties": 264,
+          "wins": 17
+        }
+      },
+      "dense_to_dense_rerank": {
+        "AP": {
+          "baseline_mean": 0.6491673152531618,
+          "bootstrap_ci_95_high": -0.021163400783656132,
+          "bootstrap_ci_95_low": -0.09623950192529447,
+          "candidate_mean": 0.5907665955172354,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 89,
+          "mean_difference": -0.05840071973592634,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.177725245404053,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.0025498725063746812,
+          "ties": 153,
+          "wins": 58
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6885256777652553,
+          "bootstrap_ci_95_high": -0.021373827246006703,
+          "bootstrap_ci_95_low": -0.090654854109069,
+          "candidate_mean": 0.6327173315301531,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 80,
+          "mean_difference": -0.05580834623510225,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.18411815715077504,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.0019499025048747563,
+          "ties": 169,
+          "wins": 51
+        }
+      },
+      "hybrid_to_hybrid_rerank": {
+        "AP": {
+          "baseline_mean": 0.6779629727268006,
+          "bootstrap_ci_95_high": -0.07364965757651953,
+          "bootstrap_ci_95_low": -0.13961303845893494,
+          "candidate_mean": 0.5722111078884832,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 114,
+          "mean_difference": -0.10575186483831744,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.3597108716360728,
+          "queries": 300,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 158,
+          "wins": 28
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.7174099728731805,
+          "bootstrap_ci_95_high": -0.07691677798591554,
+          "bootstrap_ci_95_low": -0.13903077504953062,
+          "candidate_mean": 0.6101783793349375,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 99,
+          "mean_difference": -0.10723159353824314,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.38851652095705413,
+          "queries": 300,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 177,
+          "wins": 24
+        }
+      },
+      "lexical_to_dense": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": 0.054205567675896876,
+          "bootstrap_ci_95_low": -0.02524064366546958,
+          "candidate_mean": 0.6491673152531618,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 70,
+          "mean_difference": 0.01426591498464709,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.04050537476231176,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.48147592620368984,
+          "ties": 136,
+          "wins": 94
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": 0.05361872126237131,
+          "bootstrap_ci_95_low": -0.021946500169685225,
+          "candidate_mean": 0.6885256777652553,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 64,
+          "mean_difference": 0.01567530445996699,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.046868854356750735,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.42142892855357234,
+          "ties": 167,
+          "wins": 69
+        }
+      },
+      "lexical_to_hybrid": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": 0.06669187953616108,
+          "bootstrap_ci_95_low": 0.01939061870633243,
+          "candidate_mean": 0.6779629727268006,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 30,
+          "mean_difference": 0.04306157245828594,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.20296125063912418,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.00039998000099995,
+          "ties": 164,
+          "wins": 106
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": 0.06683047035156511,
+          "bootstrap_ci_95_low": 0.02223534812950826,
+          "candidate_mean": 0.7174099728731805,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 27,
+          "mean_difference": 0.044559599567892245,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.2253217867299331,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.000199990000499975,
+          "ties": 200,
+          "wins": 73
+        }
+      },
+      "lexical_to_lexical_rerank": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": -0.03855120548795605,
+          "bootstrap_ci_95_low": -0.1000105828774443,
+          "candidate_mean": 0.5662233890221174,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 81,
+          "mean_difference": -0.06867801124639722,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.2526564647298635,
+          "queries": 300,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 175,
+          "wins": 44
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": -0.03942438951038637,
+          "bootstrap_ci_95_low": -0.09765985984397217,
+          "candidate_mean": 0.6050441954647827,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 80,
+          "mean_difference": -0.06780617784050562,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.26398603556866324,
+          "queries": 300,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 185,
+          "wins": 35
+        }
+      }
+    },
+    "query_analysis": {
+      "categories": {
+        "long_>=10_tokens": {
+          "losses": 21,
+          "mean_ap_delta": 0.03623644555153784,
+          "queries": 214,
+          "ties": 116,
+          "wins": 77
+        },
+        "medium_6-9_tokens": {
+          "losses": 8,
+          "mean_ap_delta": 0.0678086279314476,
+          "queries": 76,
+          "ties": 41,
+          "wins": 27
+        },
+        "named_entity_heavy": {
+          "losses": 2,
+          "mean_ap_delta": 0.03464498684437543,
+          "queries": 32,
+          "ties": 19,
+          "wins": 11
+        },
+        "phrase_proximity_sensitive": {
+          "losses": 30,
+          "mean_ap_delta": 0.044964872522442766,
+          "queries": 282,
+          "ties": 150,
+          "wins": 102
+        },
+        "rare_or_oov_term": {
+          "losses": 29,
+          "mean_ap_delta": 0.04156183981714902,
+          "queries": 290,
+          "ties": 162,
+          "wins": 99
+        },
+        "short_<=5_tokens": {
+          "losses": 1,
+          "mean_ap_delta": 0.0010416666666666667,
+          "queries": 10,
+          "ties": 7,
+          "wins": 2
+        },
+        "strong_lexical_dense_disagreement": {
+          "losses": 20,
+          "mean_ap_delta": 0.04664304832948784,
+          "queries": 178,
+          "ties": 92,
+          "wins": 66
+        }
+      },
+      "category_protocol": {
+        "long": ">=10 lexical tokens",
+        "named_entity_heavy": ">=20% of whitespace tokens after the first are capitalised/acronyms",
+        "phrase_sensitive": "BM25F and BM25F+phrase/proximity top-10 order differs",
+        "ranking_disagreement": "top-10 set Jaccard <=0.20",
+        "rare_or_oov": "minimum query-term document-frequency ratio <=1%",
+        "short": "<=5 lexical tokens"
+      },
+      "representative_largest_absolute_deltas": [
+        {
+          "ap_delta": -0.9090909090909091,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.0,
+          "query": "Venules have a thinner or absent smooth layer compared to arterioles.",
+          "query_id": "1363"
+        },
+        {
+          "ap_delta": 0.875,
+          "labels": [
+            "medium_6-9_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Activator-inhibitor pairs are provided dorsally by Admpchordin.",
+          "query_id": "72"
+        },
+        {
+          "ap_delta": 0.8571428571428572,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "In domesticated populations of Saccharomyces cerevisiae, whole chromosome aneuploidy is very uncommon.",
+          "query_id": "575"
+        },
+        {
+          "ap_delta": -0.8333333333333334,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.3333333333333333,
+          "query": "LDL cholesterol has no involvement in the development of cardiovascular disease.",
+          "query_id": "674"
+        },
+        {
+          "ap_delta": -0.8,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Crossover hot spots are not found within gene promoters in Saccharomyces cerevisiae.",
+          "query_id": "294"
+        },
+        {
+          "ap_delta": 0.75,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "Transplanted human glial cells can differentiate within the host animal.",
+          "query_id": "1319"
+        },
+        {
+          "ap_delta": -0.75,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.3333333333333333,
+          "query": "Crosstalk between dendritic cells (DCs) and innate lymphoid cells (ILCs) is important in the regulation of intestinal homeostasis.",
+          "query_id": "295"
+        },
+        {
+          "ap_delta": 0.75,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.05263157894736842,
+          "query": "Low nucleosome occupancy correlates with low methylation levels across species.",
+          "query_id": "718"
+        },
+        {
+          "ap_delta": 0.6666666666666667,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.42857142857142855,
+          "query": "Synaptic activity enhances local release of brain derived neurotrophic factor from postsynaptic dendrites.",
+          "query_id": "1121"
+        },
+        {
+          "ap_delta": -0.6666666666666667,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.6666666666666666,
+          "query": "Neutrophil extracellular traps (NETs) are released by ANCA-stimulated neutrophils.",
+          "query_id": "845"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "medium_6-9_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.25,
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "query_id": "1019"
+        },
+        {
+          "ap_delta": -0.5,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.42857142857142855,
+          "query": "Subcutaneous fat depots undergo extensive browning processes after cold exposure.",
+          "query_id": "1107"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "medium_6-9_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "The locus rs647161 is associated with colorectal carcinoma.",
+          "query_id": "1225"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.5384615384615384,
+          "query": "The risk of breast cancer among parous women increases with placental weight of pregnancies, and this association is strongest for premenopausal breast cancer.",
+          "query_id": "1266"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "medium_6-9_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.42857142857142855,
+          "query": "CR is associated with higher methylation age.",
+          "query_id": "212"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "medium_6-9_tokens",
+            "rare_or_oov_term",
+            "strong_lexical_dense_disagreement",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.1111111111111111,
+          "query": "Chenodeosycholic acid treatment reduces whole-body energy expenditure.",
+          "query_id": "249"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "short_<=5_tokens",
+            "named_entity_heavy",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.42857142857142855,
+          "query": "Cold exposure reduces BAT recruitment.",
+          "query_id": "269"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.25,
+          "query": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+          "query_id": "3"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.3333333333333333,
+          "query": "Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation",
+          "query_id": "439"
+        },
+        {
+          "ap_delta": 0.5,
+          "labels": [
+            "long_>=10_tokens",
+            "rare_or_oov_term",
+            "phrase_proximity_sensitive"
+          ],
+          "lexical_dense_top10_jaccard": 0.3333333333333333,
+          "query": "Fz/PCP-dependent Pk localizes to the anterior membrane of notochord cells during zebrafish neuralation.",
+          "query_id": "440"
+        }
+      ]
+    },
+    "significance_vs_bm25f_phrase_proximity": {
+      "dense": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": 0.054205567675896876,
+          "bootstrap_ci_95_low": -0.02524064366546958,
+          "candidate_mean": 0.6491673152531618,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 70,
+          "mean_difference": 0.01426591498464709,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.04050537476231176,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.48147592620368984,
+          "ties": 136,
+          "wins": 94
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": 0.05361872126237131,
+          "bootstrap_ci_95_low": -0.021946500169685225,
+          "candidate_mean": 0.6885256777652553,
+          "interpretation": "statistically uncertain at the 95% interval",
+          "losses": 64,
+          "mean_difference": 0.01567530445996699,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.046868854356750735,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.42142892855357234,
+          "ties": 167,
+          "wins": 69
+        }
+      },
+      "dense_rerank": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": -0.012895177339095525,
+          "bootstrap_ci_95_low": -0.07592900295987748,
+          "candidate_mean": 0.5907665955172354,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 76,
+          "mean_difference": -0.04413480475127925,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.157777381199665,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.006549672516374182,
+          "ties": 146,
+          "wins": 78
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": -0.009164802830328087,
+          "bootstrap_ci_95_low": -0.0717306413639587,
+          "candidate_mean": 0.6327173315301531,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 70,
+          "mean_difference": -0.04013304177513527,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.1449398419068837,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.0127993600319984,
+          "ties": 183,
+          "wins": 47
+        }
+      },
+      "hybrid_rerank": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": -0.031659882697162044,
+          "bootstrap_ci_95_low": -0.09508298297566752,
+          "candidate_mean": 0.5722111078884832,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 82,
+          "mean_difference": -0.06269029238003149,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.2189815366736892,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.00014999250037498125,
+          "ties": 142,
+          "wins": 76
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": -0.03182204674127223,
+          "bootstrap_ci_95_low": -0.0949687492710187,
+          "candidate_mean": 0.6101783793349375,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 78,
+          "mean_difference": -0.06267199397035092,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.22297630655422235,
+          "queries": 300,
+          "randomisation_p_two_sided": 9.99950002499875e-05,
+          "ties": 182,
+          "wins": 40
+        }
+      },
+      "hybrid_rrf": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": 0.06669187953616108,
+          "bootstrap_ci_95_low": 0.01939061870633243,
+          "candidate_mean": 0.6779629727268006,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 30,
+          "mean_difference": 0.04306157245828594,
+          "metric": "AP",
+          "paired_effect_size_dz": 0.20296125063912418,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.00039998000099995,
+          "ties": 164,
+          "wins": 106
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": 0.06683047035156511,
+          "bootstrap_ci_95_low": 0.02223534812950826,
+          "candidate_mean": 0.7174099728731805,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 27,
+          "mean_difference": 0.044559599567892245,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": 0.2253217867299331,
+          "queries": 300,
+          "randomisation_p_two_sided": 0.000199990000499975,
+          "ties": 200,
+          "wins": 73
+        }
+      },
+      "lexical_rerank": {
+        "AP": {
+          "baseline_mean": 0.6349014002685147,
+          "bootstrap_ci_95_high": -0.03855120548795605,
+          "bootstrap_ci_95_low": -0.1000105828774443,
+          "candidate_mean": 0.5662233890221174,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 81,
+          "mean_difference": -0.06867801124639722,
+          "metric": "AP",
+          "paired_effect_size_dz": -0.2526564647298635,
+          "queries": 300,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 175,
+          "wins": 44
+        },
+        "nDCG@10": {
+          "baseline_mean": 0.6728503733052884,
+          "bootstrap_ci_95_high": -0.03942438951038637,
+          "bootstrap_ci_95_low": -0.09765985984397217,
+          "candidate_mean": 0.6050441954647827,
+          "interpretation": "confidence interval excludes zero",
+          "losses": 80,
+          "mean_difference": -0.06780617784050562,
+          "metric": "nDCG@10",
+          "paired_effect_size_dz": -0.26398603556866324,
+          "queries": 300,
+          "randomisation_p_two_sided": 4.999750012499375e-05,
+          "ties": 185,
+          "wins": 35
+        }
+      }
+    }
+  }
+}
